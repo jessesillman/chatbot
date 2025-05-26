@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot using Ollama (Local)</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #121212; 
+            color: #ffffff; 
+            margin: 0; 
+            padding: 0;
+        }
+        .container { 
+            width: 50%; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #1e1e1e; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+        }
+        h1 { 
+            text-align: center; 
+            color: #ffffff; 
+        }
+        p { 
+            text-align: center; 
+            color: #cccccc; 
+        }
+        .chat-box { 
+            margin-top: 20px; 
+            border-top: 2px solid #333333; 
+            padding-top: 20px;
+        }
+        .chat-box .user-message, 
+        .chat-box .bot-message { 
+            padding: 10px; 
+            margin: 10px 0; 
+            border-radius: 5px;
+        }
+        .user-message { 
+            background-color: #007BFF; 
+            color: #ffffff; 
+            text-align: right;
+        }
+        .bot-message { 
+            background-color: #333333; 
+            color: #ffffff;
+        }
+        form { 
+            margin-top: 20px;
+        }
+        input[type="text"] { 
+            width: 80%; 
+            padding: 10px; 
+            border-radius: 5px; 
+            border: 1px solid #555555; 
+            background-color: #1e1e1e; 
+            color: #ffffff;
+        }
+        button { 
+            padding: 10px 20px; 
+            border: none; 
+            background-color: #007BFF; 
+            color: white; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+        button:hover { 
+            background-color: #0056b3; 
+        }
+        footer { 
+            text-align: center; 
+            margin-top: 20px; 
+            font-size: 12px;
+            
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chatbot </h1>
+        <p>This is my simple chatbot that uses the DeepSeek R1 reasoning model with Ollama.</p>
+        <div class="chat-box">
+            {% if user_input %}
+                <div class="user-message">{{ user_input }}</div>
+                <div class="bot-message">{{ bot_response }}</div>
+            {% endif %}
+        </div>
+        <form method="POST">
+            <input type="text" name="user_input" placeholder="Ask me something..." value="{{ user_input }}" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2025 Jesse Sillman - All rights reserved.</p>
+    </footer>
+</body>
+</html>
