@@ -66,3 +66,8 @@ python app.py
 
  Open your browser and navigate to `http://127.0.0.1:5000/` to use the chatbot.
 
+
+ ## Usage
+
+ You're welcome to use and change the conde in any eay you like. Have fun building! 🤖
+
