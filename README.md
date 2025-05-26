@@ -15,7 +15,7 @@ to create the `app.py` backend and HTML for the `templates/index.html` file to b
 ## Structure
 
 ```
-/chatbot
+/ChatBot
 ├── app.py
 └── /templates
     └── index.html
