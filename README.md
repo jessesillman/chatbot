@@ -69,5 +69,5 @@ python app.py
 
  ## Usage
 
- You're welcome to use and change the conde in any eay you like. Have fun building! 🤖
+ You're welcome to use and change the code in any eay you like. Have fun building! 🤖
 
