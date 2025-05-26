@@ -25,6 +25,10 @@ to create the `app.py` backend and HTML for the `templates/index.html` file to b
 
 ### 1. Clone the repository
 
+```bash
+git clone https://github.com/jessesillman/chatbot
+```
+
 ### 2. Install Ollama
 
 Follow the official installaction instructions from [Ollama's website](https://ollama.com/download) for your platform.
